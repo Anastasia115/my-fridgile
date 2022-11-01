@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "General Sans";
+  font-weight: normal;
+  src: "../../fonts/GeneralSans-Regular.OTF" format("opentype");
+}
+
+@font-face {
+  font-family: "General Sans";
+  font-weight: bold;
+  src: "../../fonts/GeneralSans-Medium.OTF" format("opentype");
+}
+
+.NavbarMobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 9vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  -webkit-box-shadow: 0px -4px 10px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 8px 20px rgba(50, 50, 50, 0.75);
+  transition: 0.5s all ease-in-out;
+  z-index: 1;
+  background-color: white;
+  font-family: "General Sans";
+  font-weight: normal;
+}
+
+.NavBtnContainerMobile {
+  height: 9vh;
+  font-size: 12px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  width: 80px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.NavBtnContainerMobile a {
+  display: flex;
+  height: 8vh;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.NavBtnContainerMobile p {
+  margin: 0;
+  padding: 0;
+  font-family: "General Sans";
+  font-weight: normal;
+}
+
+.NavBtnsMobile {
+  width: 25px;
+  height: 25px;
+}
+
+.NavBtnMobileMiddle {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -20px;
+}
+
+.NavBtnMobileMiddle:hover {
+  transform: rotate(360deg);
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 570px) {
+  .NavbarMobile {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 570px) {
+  .NavbarMobile {
+    display: none;
+  }
+}
